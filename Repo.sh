@@ -46,7 +46,7 @@ read enter
 exit
 }
 
-
+pkg install toilet
 toilet -f big '    SLAVIK' -F metal
 sleep 2
 echo -e $white"$red contact:https://www.facebook.com/killersboy.kby $white "
@@ -566,6 +566,4 @@ echo -e $red" fb :https://www.facebook.com/killersboy.kby "
 sleep 1
 echo -e $red" BUENOS DIAS /FOR YOU " 
 sleep 1
-cd ..
-bash menu
 fi
