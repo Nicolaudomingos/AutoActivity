@@ -62,13 +62,13 @@ echo -e $y "Current Time is: $Hour:$Minute:$Second"
 
 echo -e $g2"[[[[[[[   SLAVIK AUTO ACTIVITIES   ]]]]]]]"
 
-echo -e $ C "[01] Copy "
+echo -e $c"[01] Copy "
 echo -e "[02] Activate  (Chmod)" 
 echo -e "[03] Remove " 
 echo -e "[04] View " 
 echo -e "[05] Edit "
 echo -e $y" [00] Back  "$y
-echo -e $ R" [99] Exit "$r
+echo -e $r" [99] Exit "$r
 read -p  "[😼)SLAVIK(😼]]<÷>> " act;
 
 
