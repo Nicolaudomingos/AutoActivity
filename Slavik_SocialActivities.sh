@@ -1,3 +1,5 @@
+###By evgenyslavikbogachev@sika3.com
+
 #COLORS
 b='\e[0;34'
 c='\e[0;36m'
@@ -14,14 +16,12 @@ y='\e[1;33m'
 
 banner() {
 
-printf "\e[1;77m ███████╗ ██████╗  ██████╗██╗ █████╗ ██╗      \e[0m\n"
-printf "\e[1;77m ██╔════╝██╔═══██╗██╔════╝██║██╔══██╗██║      \e[0m\n"
-printf "\e[1;77m ███████╗██║   ██║██║     ██║███████║██║      \e[0m\n"
-printf "\e[1;77m ╚════██║██║   ██║██║     ██║██╔══██║██║      \e[0m\n"
-printf "\e[1;77m ███████║╚██████╔╝╚██████╗██║██║  ██║███████╗ \e[0m\n"
-printf "\e[1;77m ╚══════╝ ╚═════╝  ╚═════╝╚═╝╚═╝  ╚═╝╚══════╝ \e[0m\n"
+echo " █▀▀▀█ █░░░ █▀▀█ █░░▒█ ▀█▀ █░▄▀"
+echo " ▀▀▀▄▄ █░░░ █▄▄█ ▒█▒█░ ░█░ █▀▄░"
+echo " █▄▄▄█ █▄▄█ █░▒█ ░▀▄▀░ ▄█▄ █░▒█"
+
 printf "\n"
-printf "\e[1;93m       .:.:.\e[0m\e[1;77m ACTIVITIES coded by: @Slavik \e[0m\e[1;93m.:.:.\e[0m\n"
+printf "\e[1;93m .:.\e[0m\e[1;77m ᵃᶜᵗᶤᵛᶤᵗᶤᵉˢ coded by: @ᵉᵛᴳᴱᴺᵞ🔴ˢᴸᴬᵛᴵᴷ🔵 \e[0m\e[1;93m.:.:.\e[0m\n"
 printf "\n"
 }
 
@@ -59,17 +59,19 @@ Second=`date +%S`
 echo -e $g1 `date`
 echo -e $r "Current Date is: $Day-$Month-$Year"
 echo -e $y "Current Time is: $Hour:$Minute:$Second"
-
-echo -e $g2"[[[[[[[   SLAVIK AUTO ACTIVITIES   ]]]]]]]"
+printf "\n"
+echo -e $g2"[[[[[[[   ˢˡᵃᵛᶤᵏ ᵃᵘᵗᵒ ᵃᶜᵗᶤᵛᶤᵗᶤᵉˢ   ]]]]]]]"
 
 echo -e $c"[01] Copy "
-echo -e "[02] Activate  (Chmod)" 
-echo -e "[03] Remove " 
-echo -e "[04] View " 
+echo -e "[02] Activate (Chmod)"
+echo -e "[03] Remove "
+echo -e "[04] View "
 echo -e "[05] Edit "
-echo -e $y" [00] Back  "$y
-echo -e $r" [99] Exit "$r
-read -p  "[😼)SLAVIK(😼]]<÷>> " act;
+echo -e $y"[00] Back  "$y
+echo -e $r"[99] Exit "$r
+printf "\n"
+read -p  "{[@Welcome]}
+[ˢᴸᴬᵛᴵᴷ🔵]=====>" act;
 
 
 
@@ -77,11 +79,13 @@ if [ $act = 05 ] || [ $act = 5 ]
 then
 clear
 banner
-echo -e "[5.1]   Auto"
+echo -e "[5.1]  Auto"
 echo -e "[5.2]  Edit  Bash.bashrc"
 echo -e "[5.3]  Edit  Keywords manual"
 echo -e "[5.4]  Edit  Keywords auto"
-read -p  "[😼)SLAVIK(😼]]<÷>> " act;
+echo -e "[5.5]  Edit  Bash.bashrc auto"
+read -p  "{[@Welcome]}
+[ˢᴸᴬᵛᴵᴷ🔵]=====>" act;
 fi
 
 ##aBack
@@ -91,9 +95,9 @@ then
 clear
 pwd
 ls -a
-echo -e "/storage/sdcard0"
-echo -e "/sdcard"
-echo -e "/data/data/com.termux/files/home"
+echo -e " /storage/sdcard0"
+echo -e " /sdcard"
+echo -e " /data/data/com.termux/files/home"
 echo -e " /data/data/com.termux/files/usr"
 echo -e " /data/data/com.termux/files/usr/bin"
 echo -e " /data/data/com.termux/files/usr/etc"
@@ -109,10 +113,9 @@ fi
 if [ $act = 5.2 ]
 then
 clear
-echo -e "Copie e disque enter"
+echo -e "Copy and click the Enter button"
 
-echo -e "PS1=#===============|\w\n"
-echo -e "====> "
+echo -e "Enter"
 read enter
 chmod +x *
 nano /data/data/com.termux/files/usr/etc/bash.bashrc
@@ -154,6 +157,17 @@ clear
 echo -e $r"======>>OPEN NEW SESSION<<======"
 fi
 
+#BASH auto
+if [ $act = 5.5 ]
+then
+clear
+echo -e "Enter "
+read enter
+chmod +x *
+rm /data/data/com.termux/files/usr/etc/bash.bashrc
+cp bash.bashrc /data/data/com.termux/files/usr/etc
+fi
+
 if [ $act = 01 ] || [ $act = 1 ]
 then
 clear
@@ -174,7 +188,8 @@ echo -e "==================================÷>"
 echo -e "💾[1.9] /Home << /sdcard"
 echo -e "📂[1.10] /Home << /sdcard"
 echo -e "==================================÷>"
-read -p  "[😼)SLAVIK(c)(😼]]<÷>> " act;
+read -p  "{[@Welcome]}
+[ˢᴸᴬᵛᴵᴷ🔵]=====>" act;
 fi
 ## Auto copy
 
@@ -335,6 +350,7 @@ fi
 if [ $act = 02 ] || [ $act = 2 ]
 then
 clear
+banner
 echo -e "/data/data/com.termux/files/home"
 echo -e " /data/data/com.termux/files/usr/bin"
 echo -e " /data/data/com.termux/files/usr/etc"
@@ -360,11 +376,12 @@ clear
 banner
 echo -e ">>>>>>>>>>>>>>>"
 echo -e "[3.1] Auto    (file)"
-echo -e "[3.2] Auto   (Pasta)"
+echo -e "[3.2] Auto   (folder)"
 echo -e "[3.3] motd..."
-echo -e "[3.4]DCIM..."
+echo -e "[3.4] DCIM..."
 echo -e ">>>>>>>>>>>>>>>"
-read -p  "[😼)SLAVIK(r)(😼]]<÷>> " act;
+read -p  "{[@Welcome]}
+[ˢᴸᴬᵛᴵᴷ🔵]=====>" act;
 fi
 
 ##REMOVER ALEATÓfile
@@ -440,7 +457,8 @@ echo -e "[4.5]/data/data/com.termux/files/usr/bin"
 echo -e "[4.6]/data/data/com.termux/files/usr/etc"
 echo -e "[4.7]/storage/sdcard0/TERMUX"
 echo -e "[4.8]  Auto "
-read -p  "[😼)SLAVIK(😼]]<÷>> " act;
+read -p  "{[@Welcome]}
+[ˢᴸᴬᵛᴵᴷ🔵]=====>" act;
 fi
 ##aceder home
 if  [ $act = 4.1 ] || [ $act = 4.1 ]
@@ -530,12 +548,13 @@ ls
 pwd
 fi
 ####$$###########
+####$$###########
 ##aBack
 if  [ $act = 00 ] || [ $act = 0 ]
 then
 clear
 ls
-bash a1
+bash Slavik_SocialActivities.sh
 clear
 ls
 fi
@@ -548,12 +567,3 @@ pwd
 ls
 exit
 
-
-
-
-##aBack
-else:
-clear
-ls
-bash a1
-fi
