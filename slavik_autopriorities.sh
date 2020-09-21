@@ -1,8 +1,18 @@
+
 #!/data/data/com.termux/files/usr/bin/bash
 # AUTO INSTALL TOOLS 2020
 # coded By  Slavik
 clear
 
+#COLORS
+b='\e[0;34'
+c='\e[0;36m'
+g='\e[0;34m'
+g1='\033[92m'
+g2='\e[1;32m'
+w='\e[1;37m'
+r='\e[1;31m'
+y='\e[1;33m'
 blue='\e[0;34'
 cyan='\e[0;36m'
 green='\e[0;34m'
@@ -46,8 +56,13 @@ read enter
 exit
 }
 
-pkg install toilet
-toilet -f big '    SLAVIK' -F metal
+echo " █▀▀▀█ █░░░ █▀▀█ █░░▒█ ▀█▀ █░▄▀"
+echo " ▀▀▀▄▄ █░░░ █▄▄█ ▒█▒█░ ░█░ █▀▄░"
+echo " █▄▄▄█ █▄▄█ █░▒█ ░▀▄▀░ ▄█▄ █░▒█"
+
+printf "\n"
+printf "\e[1;93m .:.\e[0m\e[1;77m ᴾᴿᴵᴼᴿᴵᵀᴵᴱˢ coded by: @ᵉᵛᴳᴱᴺᵞ🔴ˢᴸᴬᵛᴵᴷ🔵 \e[0m\e[1;93m.:.:.\e[0m\n"
+printf "\n"
 sleep 2
 echo -e $white"$red contact:https://www.facebook.com/killersboy.kby $white "
 echo -e $red"$white greetz :EVGENY SLAVIK $red                              "
@@ -104,7 +119,9 @@ echo -e $cyan" 43)  FISH"
 echo -e $cyan" 44)  CMATRIX"
 echo -e $green" 00) back"
 echo -e $white""
-read -p "[😼)SLAVIK(😼]]<÷>> " act;
+
+read -p  "{[@Welcome]}
+[ˢᴸᴬᵛᴵᴷ🔵]=====>" act;
 
 if [ $act = 01 ] || [ $act = 01 ]
 then
